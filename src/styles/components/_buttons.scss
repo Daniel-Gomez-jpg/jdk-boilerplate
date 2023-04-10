@@ -1,0 +1,54 @@
+.button{
+    color: $color-white;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 3.125rem;
+    width: 8.75rem;
+    height: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    border: none;
+    cursor: pointer;
+    
+    @media screen and (min-width: 768px){
+        width: 10.4375rem;
+        height: 3.5rem;
+        font-size: 18px;
+    }
+
+    &--black{
+        background-color: $color-black;
+
+        &:hover{
+            background-color: $color-light-black;
+        }
+    }
+
+    &--gradient{
+        background-color: $color-gradient;
+
+        &:hover{
+            background-color: $color-light-gradient;
+        }
+    }
+
+    &--purple{
+        background-color: $color-purple;
+
+        &:hover{
+            background-color: $color-light-purple;
+        }
+    }
+
+    &--basic{
+        background-color: $color-white;
+        color: $color-gradient;
+        width: auto;
+
+        &:hover{
+            color: $color-light-gradient;
+        }
+    }
+}

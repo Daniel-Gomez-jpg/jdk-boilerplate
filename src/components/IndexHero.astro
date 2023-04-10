@@ -1,0 +1,29 @@
+---
+import Chart from "./Chart.astro";
+---
+
+<section class="hero wrapper">
+    <div class="hero-text">
+        <h2 class="hero-text__title">
+            Maximize skill, minimize budget
+        </h2>
+        <p class="hero-text__paragraph">
+            Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
+        </p>
+        <button class="button button--gradient">get started</button>
+    </div>
+
+    <div class="hero-graphics">
+        <div class="desktop-element">
+            <img class="hero-graphics__rectangle" src="/assets/images/Rectangle.png" alt="">
+            <img class="hero-graphics__main" src="/assets/images/main-image.png" alt="">
+            <Chart name="Members" number="29k" id="c1"/>
+            <Chart name="Course hours" number="1,451" id="c2"/>
+        </div>
+        <div class="mobile-element">
+            <img src="/assets/images/hero-mobile.png" alt="" class="hero-graphics__main-mobile">
+            <Chart name="Members" number="29k" id="c1"/>
+            <Chart name="Course hours" number="1,451" id="c2"/>
+        </div>
+    </div>
+</section> 

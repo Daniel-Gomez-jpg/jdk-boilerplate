@@ -1,0 +1,79 @@
+.cards{
+    margin-top: 6.875rem!important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: $color-white;
+    max-width: 21.875rem;
+    min-height: 15.625rem;
+    margin-bottom: 5rem;
+    margin-left: 5px;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-bottom: 40px;
+    padding-right: 32px;
+    position: relative;
+    box-shadow: 0 0 25px rgb(216, 216, 216);
+
+    @media screen and (max-width:768px) {
+        max-width: 343px;
+        min-height: 239px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }    
+    
+
+    &__icon{
+        position: absolute;
+        top: -20px;
+    }
+
+    &__title{
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    p{
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: $color-light-black;
+        margin-bottom: 24px;
+        max-width: 286px;
+    }
+
+    button{
+        position: absolute;
+        height: auto;
+        bottom: 40px;
+        @media screen and (max-width:768px) {
+            bottom: 32px;
+        }    
+    }
+
+}
+.card--basic{
+    background-color: $color-gradient;
+    padding-top: 64px;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    p{
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        color: $color-white;
+        max-width: 286px;
+    }
+}

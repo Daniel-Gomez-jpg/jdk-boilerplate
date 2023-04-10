@@ -1,0 +1,22 @@
+@import './settings/variables';
+@import './components/_header.scss';
+@import './components/footer';
+@import './components/buttons';
+@import './components/index-hero';
+@import './components/card';
+@import './components/chart';
+
+.wrapper{
+    max-width: 1110px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}

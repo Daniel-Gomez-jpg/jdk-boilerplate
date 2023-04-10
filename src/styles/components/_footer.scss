@@ -1,0 +1,21 @@
+.footer{
+    background-color: $color-black;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &__logo{
+        width: 5.5625rem;
+        cursor: pointer;
+
+        @media screen and (min-width: 768px){
+            width: 7.125rem;
+        }
+
+    }
+}

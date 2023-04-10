@@ -1,0 +1,110 @@
+.hero{
+    position: relative;
+    display: flex;
+    margin-top: 87px!important;
+    align-items: center;
+
+    @media screen and (max-width:768px) {
+        display: block;
+        margin-top: 20px!important;
+    }    
+
+    .hero-text{
+        max-width: 457px;
+        margin-top: -3rem;
+
+        &__title{
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 56px;
+            line-height: 71px;
+            color: $color-black;
+
+            @media screen and (max-width:768px) {
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 50px;;
+            }
+        }
+
+        &__paragraph{
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 0;
+            color: $color-light-black;
+        }
+
+        .button{
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width:768px) {
+            margin: auto;
+        }
+    }
+
+    .hero-graphics{
+        
+        @media screen and (max-width:768px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        &__rectangle{
+            position: absolute;
+            right: -166px;
+            top: -175px;
+            z-index: -1;
+            width: 27.5625rem;
+            height: 536px;
+        /*     width: 317px;
+            height: 1008px; */
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+
+        &__main{
+            position: absolute;
+            right: 39px;
+            width: 236px;
+            top: -41px;
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+
+        &__main-mobile{
+            display: none;
+            @media screen and (max-width:768px) {
+                display: unset;
+                margin: auto;
+            }
+        }
+
+        .mobile-element{
+            position: relative;
+            @media screen and (min-width:768px) {
+                display: none;
+            }
+        }
+
+        .desktop-element{
+            @media screen and (max-width:768px) {
+            display: none;
+            }
+        }
+
+        /* @media screen and (max-width:768px) {
+            background-image: url('/assets/images/hero-mobile.png'); 
+
+            height: auto;
+
+        } */
+    }
+}

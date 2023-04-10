@@ -1,10 +1,54 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Hero from "../components/IndexHero.astro";
 ---
 
-<Layout title="Welcome">
-	<main>
+<Layout title="SKILLED">
+	<Hero />
+	
+	<div class="cards wrapper">
+
+	<div class='card card--basic'>
+	<p>Check out our most popular courses!</p>	
+	</div>
+
+		<Card
+		title="ANIMATION"
+		image="/assets/images/animation-icon (2).png"
+		>
+		<p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+	</Card>
+
+	<Card
+		title="Design"
+		image="/assets/images/design-icon.png"
+		>
+		<p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+	</Card>
+
+	<Card
+		title="Photography"
+		image="/assets/images/photography-icon.png"
+		>
+		<p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+	</Card>
+	
+	<Card
+		title="Crypto"
+		image="/assets/images/crypto-icon.svg"
+		>
+		<p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+	</Card>
+	
+	<Card
+		title="Business"
+		image="/assets/images/business-icon.png"
+		>
+		<p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+	</Card>
+</div>
+	<!-- <main>
 		<h1>Project <span class="text-gradient">Started</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br
@@ -22,10 +66,10 @@ import Card from "../components/Card.astro";
 				body="Learn how Astro works and explore the official API docs."
 			/>
 		</ul>
-	</main>
+	</main> -->
 </Layout>
 
-<style>
+<!-- <style>
 	main {
 		margin: auto;
 		padding: 1.5rem;
@@ -69,3 +113,4 @@ import Card from "../components/Card.astro";
 		padding: 0;
 	}
 </style>
+ -->

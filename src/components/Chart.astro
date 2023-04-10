@@ -1,0 +1,14 @@
+---
+type Props = {
+  name: string ;
+  number: string;
+  id: string;
+
+};
+
+const { name, number, id } = Astro.props;
+---
+<div class="chart" id={id}>
+    <p class="chart__name">{name}</p>
+    <h6 class="chart__number">{number}</h6>
+</div>

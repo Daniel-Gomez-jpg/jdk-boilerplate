@@ -1,0 +1,55 @@
+.chart{
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 57px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(216, 216, 216);
+    background-color: $color-white;
+    
+    
+
+    &__name{
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 0;
+        color: $color-light-black;
+    }
+
+    &__number{
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0;
+    }
+    
+    &#c1{
+       right: -71px;
+       top: -58px;
+       @media screen and (min-width:768px) {
+        right: -41px;
+        top: -72px;
+       }
+    }
+
+    &#c2{
+        left: -52px;
+        bottom: -88px;
+        @media screen and (min-width:768px) {  
+            left: unset;
+            bottom: unset;   
+            right: 174px;
+            top: 304px;     
+        }
+    }
+}
+
+

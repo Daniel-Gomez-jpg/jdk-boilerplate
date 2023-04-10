@@ -19,31 +19,31 @@
     }
 
     &--black{
-        background-color: $color-black;
+        background: $color-black;
 
         &:hover{
-            background-color: $color-light-black;
+            background: $color-light-black;
         }
     }
 
     &--gradient{
-        background-color: $color-gradient;
+        background: $color-gradient;
 
         &:hover{
-            background-color: $color-light-gradient;
+            background: $color-light-gradient;
         }
     }
 
     &--purple{
-        background-color: $color-purple;
+        background: $color-purple;
 
         &:hover{
-            background-color: $color-light-purple;
+            background: $color-light-purple;
         }
     }
 
     &--basic{
-        background-color: $color-white;
+        background: $color-white;
         color: $color-gradient;
         width: auto;
 
